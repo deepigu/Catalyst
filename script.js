@@ -144,6 +144,9 @@
                     }
                 });
             });
+document.addEventListener('DOMContentLoaded', () => {
+    new MobileNavigation();
+});
 
             // Close menu when clicking outside
             document.addEventListener('click', (e) => {
@@ -468,4 +471,5 @@
 
             // Ensure button has relative positioning
             const originalPosition = getComputedStyle(button).position;
+
             if (originalPosition === 'static')
